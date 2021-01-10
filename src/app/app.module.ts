@@ -18,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     ClientsComponent,
     ProfileComponent,
-    ClientComponent,  ],
+    ClientComponent,  
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

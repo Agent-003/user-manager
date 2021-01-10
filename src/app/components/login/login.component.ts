@@ -8,13 +8,12 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
   username = '';
-  password='';
-
-  constructor(private authService: AuthService,
+  password = '';
+  constructor(
+    private authService: AuthService,
     private router: Router,
-    ) { }
+  ) { }
 
   validateLogin() {
     this.authService.getUserId(this.username, this.password).subscribe(
@@ -25,7 +24,4 @@ export class LoginComponent {
       }, error => console.log('ERROR: ', error)
     )
   }
-
-
-
 }
